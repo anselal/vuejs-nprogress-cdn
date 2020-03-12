@@ -1,4 +1,4 @@
-template = `
+notFoundTemplate = `
 <template id="not-found-template">
   <div>
 	<h1>404 Not Found</h1>
@@ -8,5 +8,5 @@ template = `
 
 const NotFoundPage = {
 	name: 'NotFoundPage',
-	template: template,
+	template: notFoundTemplate,
 }

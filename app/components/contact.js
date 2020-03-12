@@ -1,4 +1,4 @@
-template = `
+contactTemplate = `
 <template id="contact-template">
   <div>
 	<h1>Contact Page</h1>
@@ -8,5 +8,5 @@ template = `
 
 const ContactPage = {
 	name: 'ContactPage',
-	template: template,
+	template: contactTemplate,
 }

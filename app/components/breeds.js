@@ -1,4 +1,4 @@
-template = `
+breedTemplate = `
 <template id="breeds-template">
   <div>
 	<h1>Breeds Page</h1>
@@ -24,7 +24,7 @@ template = `
 
 const BreedsPage = {
 	name: 'BreedsPage',
-	template: template,
+	template: breedTemplate,
 	data: function () {
 		return {
 			local_breeds: null,

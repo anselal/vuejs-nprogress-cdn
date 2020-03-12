@@ -1,4 +1,4 @@
-template = `
+aboutTemplate = `
 <template id="about-template">
   <div>
 	<h1>About Page</h1>
@@ -8,5 +8,5 @@ template = `
 
 const AboutPage = {
 	name: 'AboutPage',
-	template: template,
+	template: aboutTemplate,
 }

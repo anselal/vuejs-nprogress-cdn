@@ -1,4 +1,4 @@
-template = `
+homeTemplate = `
 <template id='home-template'>
   <div>
 	<h1>Home Page</h1>
@@ -14,7 +14,7 @@ template = `
 
 const HomePage = {
 	name: 'HomePage',
-	template: template,
+	template: homeTemplate,
 	data: function () {
 		return {
 			breeds: null
