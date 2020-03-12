@@ -22,5 +22,5 @@ Vue.config.devtools = true;
 
 new Vue({
 	router,
-	template: '#root-template',
+	template: homeView,
 }).$mount('#app')
