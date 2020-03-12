@@ -25,7 +25,6 @@ const HomePage = {
 			axios.get('https://jsonplaceholder.typicode.com/todos/1')
 				.then(function (response) {
 					this.breeds = response.data;
-					alert(this.breeds);
 					console.log(this.breeds);
 				});
 		}
