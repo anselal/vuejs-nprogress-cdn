@@ -1,7 +1,7 @@
 const routes = [
 	{
 		path: '/',
-		component: HomePage,
+		component: HomeView,
 		children: [
 			{ path: '/about', component: AboutPage },
 			{ path: '/breeds', component: BreedsPage },
