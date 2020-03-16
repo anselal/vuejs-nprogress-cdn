@@ -1,12 +1,12 @@
 contactTemplate = `
 <template id="contact-template">
   <div>
-	<h1>Contact Page</h1>
+    <h1>Contact Page</h1>
   </div>
 </template>
 `;
 
 const ContactPage = {
-	name: 'ContactPage',
-	template: contactTemplate,
+    name: 'ContactPage',
+    template: contactTemplate,
 }
