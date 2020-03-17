@@ -10,13 +10,13 @@ homeTemplate = `
     <div class="w3-container">
       <h1>Home View</h1>
     </div>
-    <transition name="fade" mode="out-in">
-      <keep-alive>
-        <div class="w3-container">
-          <router-view></router-view>
-        </div>
-      </keep-alive>
-    </transition>
+    <div class="w3-container">
+      <transition name="fade" mode="out-in">
+        <keep-alive>
+            <router-view></router-view>
+        </keep-alive>
+      </transition>
+    </div>
     <p v-if="breeds">{{ breeds.userId }}, {{ breeds.id }}</p>
   </div>
 </template>
