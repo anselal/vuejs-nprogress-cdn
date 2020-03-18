@@ -7,6 +7,6 @@ contactTemplate = `
 `;
 
 const ContactPage = {
-    name: 'ContactPage',
-    template: contactTemplate,
+  name: 'ContactPage',
+  template: contactTemplate,
 }

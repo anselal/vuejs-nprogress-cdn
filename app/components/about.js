@@ -7,6 +7,6 @@ aboutTemplate = `
 `;
 
 const AboutPage = {
-    name: 'AboutPage',
-    template: aboutTemplate,
+  name: 'AboutPage',
+  template: aboutTemplate,
 }

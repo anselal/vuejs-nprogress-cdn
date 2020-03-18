@@ -7,6 +7,6 @@ notFoundTemplate = `
 `;
 
 const NotFoundPage = {
-    name: 'NotFoundPage',
-    template: notFoundTemplate,
+  name: 'NotFoundPage',
+  template: notFoundTemplate,
 }

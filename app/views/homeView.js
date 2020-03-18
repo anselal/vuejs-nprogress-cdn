@@ -23,25 +23,25 @@ homeTemplate = `
 `;
 
 const HomeView = {
-    name: 'HomeView',
-    template: homeTemplate,
-    data: function () {
-        return {
-            breeds: null
-        }
-    },
-    methods: {
-        ax() {
-            axios.get('https://jsonplaceholder.typicode.com/todos/1')
-                .then(function (response) {
-                    this.breeds = response.data;
-                    console.log(this.breeds);
-                });
-        }
-    },
-    created() {
-        setTimeout(() => {
-            this.ax();
-        }, 2000);
+  name: 'HomeView',
+  template: homeTemplate,
+  data: function() {
+    return {
+      breeds: null
     }
+  },
+  methods: {
+    ax() {
+      axios.get('https://jsonplaceholder.typicode.com/todos/1')
+        .then(function(response) {
+          this.breeds = response.data;
+          console.log(this.breeds);
+        });
+    }
+  },
+  created() {
+    setTimeout(() => {
+      this.ax();
+    }, 2000);
+  }
 }
