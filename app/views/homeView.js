@@ -11,7 +11,7 @@ homeTemplate = `
       <h1>Home View</h1>
     </div>
     <div class="w3-container">
-      <transition name="fade" mode="out-in">
+      <transition name="slide-fade" mode="out-in">
         <keep-alive>
             <router-view></router-view>
         </keep-alive>
