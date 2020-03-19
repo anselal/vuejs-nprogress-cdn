@@ -6,8 +6,8 @@ breedTemplate = `
       <h2 v-if="name">Name: {{ name }}</h2>
       <h2 v-else>No name variable defined</h2>
     </div>
-    <button @click="get_breeds">Get Breeds with axios</button>
-    <button @click="clear_breeds">Clear Breeds</button>
+    <button class="w3-button w3-blue" @click="get_breeds">Get Breeds with axios</button>
+    <button class="w3-button w3-light-grey" @click="clear_breeds">Clear Breeds</button>
     <template v-if="local_breeds">
       <ul>
         <li v-for="(value, key) in local_breeds" :key="key">
