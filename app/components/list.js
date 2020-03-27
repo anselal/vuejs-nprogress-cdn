@@ -5,6 +5,7 @@ listTemplate = `
     <input type="text" v-model="newContact" placeholder="Name" />
     <button @click="addContact">Add Contact</button>
     <button @click="sortContacts">Sort</button>
+    <button @click="resetContacts">Reset</button>
 
     <transition-group name="slide-up" tag="ul" appear>
       <li v-for="contact in contacts" :key="contact">
@@ -32,6 +33,9 @@ const ListPage = {
     },
     sortContacts() {
       this.contacts.sort()
+    },
+    resetContacts() {
+      this.contacts = ['Beau Thabeast', 'Cindy Rella', 'Alice Vunderlind'];
     }
   }
 }
