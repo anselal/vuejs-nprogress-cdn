@@ -7,6 +7,7 @@ homeTemplate = `
       <router-link to="/" exact-active-class="w3-blue" class="w3-bar-item w3-button">Home</router-link>
       <router-link to="/breeds" exact-active-class="w3-blue" class="w3-bar-item w3-button">Breeds</router-link>
       <router-link to="/contact" exact-active-class="w3-blue" class="w3-bar-item w3-button">Contact</router-link>
+      <router-link to="/list" exact-active-class="w3-blue" class="w3-bar-item w3-button">List</router-link>
       <router-link to="/about" exact-active-class="w3-blue" class="w3-bar-item w3-button w3-right">About</router-link>
     </div>
 

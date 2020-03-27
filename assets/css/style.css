@@ -1,3 +1,38 @@
+#app {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+button {
+  height: 2.2em;
+  margin: 0.5em;
+  border-radius: 0.3em;
+  background: linear-gradient(to right, #16c0b0, #84cf6a);
+  color: white;
+}
+
+input {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 30%;
+  height: 1.8em;
+  padding: 0.5em;
+  margin: 0.2em;
+  font: 0.8em 'Avenir', Helvetica, sans-serif;
+}
+
+::placeholder {
+  /* color: #2c3e50; */
+}
+
+ul {
+  list-style-type: none;
+}
+
+
 /*** TRANSITIONS ***/
 
 .fade-enter,
@@ -23,4 +58,17 @@
 .slide-fade-leave-to {
   transform: translateX(-10px);
   opacity: 0;
+}
+
+.slide-up-enter {
+  transform: translateY(10px);
+  opacity: 0;
+}
+
+.slide-up-enter-active {
+  transition: all 0.8s ease;
+}
+
+.slide-up-move {
+  transition: transform 0.8s ease-in;
 }

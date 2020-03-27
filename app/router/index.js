@@ -5,6 +5,7 @@ const routes = [{
       { path: '/about', component: AboutPage },
       { path: '/breeds', component: BreedsPage },
       { path: '/contact', component: ContactPage },
+      { path: '/list', component: ListPage },
     ],
   },
   {
