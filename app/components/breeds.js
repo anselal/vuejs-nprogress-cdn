@@ -25,7 +25,7 @@ breedTemplate = `
 const BreedsPage = {
   name: 'BreedsPage',
   template: breedTemplate,
-  data: function() {
+  data: function () {
     return {
       local_breeds: null,
       name: "Anastasios Selalmazidis"
@@ -34,10 +34,10 @@ const BreedsPage = {
   methods: {
     get_breeds() {
       axios.get('https://dog.ceo/api/breeds/list/all')
-        .then(response =>
-          this.local_breeds = response.data.message,
+        .then(response => {
+          this.local_breeds = response.data.message
           console.log(this.local_breeds)
-        );
+        });
     },
     clear_breeds() {
       this.local_breeds = null;
