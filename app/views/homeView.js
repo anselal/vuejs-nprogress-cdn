@@ -23,6 +23,7 @@ homeTemplate = `
     <!-- Overlay -->
     <div class="w3-overlay" onclick="toggle_sidebar('none')" style="cursor:pointer" id="myOverlay"></div>
 
+    <!-- Router View -->
     <div class="w3-main" style="margin-left:200px">
       <div class="w3-container">
         <h1>Home View</h1>
@@ -32,7 +33,10 @@ homeTemplate = `
           </keep-alive>
         </transition>
       </div>
-      <p v-if="breeds">{{ breeds.userId }}, {{ breeds.id }}</p>
+    </div>
+    
+   <p v-if="breeds">{{ breeds.userId }}, {{ breeds.id }}</p>
+
   </div>
 </template>
 `;
@@ -40,7 +44,7 @@ homeTemplate = `
 const HomeView = {
   name: 'HomeView',
   template: homeTemplate,
-  data: function() {
+  data: function () {
     return {
       breeds: null
     }
@@ -48,7 +52,7 @@ const HomeView = {
   methods: {
     ax() {
       axios.get('https://jsonplaceholder.typicode.com/todos/1')
-        .then(function(response) {
+        .then(response => {
           this.breeds = response.data;
           console.log(this.breeds);
         });
